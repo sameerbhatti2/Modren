@@ -1,0 +1,412 @@
+/* ==========Css reset========= */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: #080808;
+}
+main{
+    display: block;
+}
+/* =====header section=========== */
+#header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0%;
+    height: 10vh;
+    background-color: #040404;
+}
+
+#logo{
+    width: 25rem;
+}
+#login{
+    display: flex;
+    border-radius: 5rem;
+    justify-content: center;
+    position: absolute;
+    right: 1%;
+    width: 16rem;
+    height: 5rem;
+    background-color: #1190CB;
+    color: #040404;
+    border: .2rem solid #1190CB;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size:medium;
+    cursor: pointer;
+}
+#login:hover{
+    /* background-color: #06577c; */
+    color: #FFFFFF;
+    border: .2rem solid wheat;
+}
+#hamburger{
+    margin: 0%;
+    margin-bottom: 4rem;
+    padding: 0%;
+}
+
+.ham-open{
+    display: none;
+    position: absolute;
+    right: 2%;
+    background-color: #040404;
+    color: #1190CB;
+    font-size: 3rem;
+    border: .2rem solid #1190CB;
+    border-radius: .5rem;
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+}
+.ham-close{
+    display: none;
+    position: absolute;
+    right: 2%;
+    background-color: #040404;
+    color: #1190CB;
+    font-size: 3rem;
+    border: .2rem solid #1190CB;
+    border-radius: .5rem;
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 1.8rem 3.4rem;
+    color: #949494;
+}
+.active{
+    color: #1190CB;
+    border-radius: 10%;
+    border-bottom: .2rem solid #1190CB;
+}
+#drpicon{
+    display: none;
+}
+nav ul li a:hover {
+    color: #1190CB;
+    border-radius: 10%;
+    border-bottom: .2rem solid #1190CB;
+}
+
+nav ul li:hover ~ #menu-01{
+    display: flex;
+    position: absolute;
+    z-index: 100;
+}
+/* ===========quickstart-menu card============== */
+.quickstart-menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    background-color: #080808;
+    /* background-color: red; */
+    color: #FFFFFF;
+    /* z-index: 10; */
+
+}
+.quickstart-menu-card{
+    display: flex;
+    flex-direction: column;
+    padding-right:  8rem;
+}
+.quickstart-menu-card a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem 0rem;
+    color: #949494;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.quickstart-menu-card a:hover {
+    text-decoration: underline;
+    color: #1190CB;
+}
+#card-line{
+ margin-top: 2rem;
+}
+#introduction{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 0.1rem;
+    
+}
+#your-account{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    
+}
+#platform1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+}
+
+/* ==========service card css================== */
+.service-menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    background-color: #080808;
+    /* background-color: red; */
+    color: #FFFFFF;
+}
+.service-menu-card{
+    display: flex;
+    flex-direction: column;
+    padding-right:  8rem;
+}
+.service-menu-card a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem 0rem;
+    color: #949494;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.service-menu-card a:hover {
+    text-decoration: underline;
+    color: #1190CB;
+}
+#card-line{
+ margin-top: 2rem;
+}
+#Fianace{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 0.1rem;
+    
+}
+#Markets{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    
+}
+#planning{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+}
+
+/* ==========Platform card css================== */
+.platform-menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    background-color: #080808;
+    /* background-color: red; */
+    color: #FFFFFF;
+}
+.platform-menu-card{
+    display: flex;
+    flex-direction: column;
+    padding-right:  8rem;
+}
+.platform-menu-card a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem 0rem;
+    color: #949494;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.platform-menu-card a:hover {
+    text-decoration: underline;
+    color: #1190CB;
+}
+#card-line{
+ margin-top: 2rem;
+}
+#MetaTrader{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 0.1rem;
+    
+}
+#cTrader{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    
+}
+#Trading-Tools{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+}
+
+/* ==========More card css================== */
+.more-menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    background-color: #080808;
+    /* background-color: red; */
+    color: #FFFFFF;
+}
+.more-menu-card{
+    display: flex;
+    flex-direction: column;
+    padding-right:  8rem;
+}
+.more-menu-card a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem 0rem;
+    color: #949494;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.more-menu-card a:hover {
+    text-decoration: underline;
+    color: #1190CB;
+}
+#card-line{
+ margin-top: 2rem;
+}
+#Company{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 0.1rem;
+    
+}
+#Education{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    
+}
+#Help{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+}
+
+
+/* =============Main container=========== */
+#container{
+    height: 60vh;
+    width: 100%;
+    background-color: #040404;
+}
+
+#firstslider{
+    background-image: url('../img/stock-trade.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 80rem;
+}
+#secondslider{
+    background-image: url('../img/blockchain.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txtblockchain{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6.2rem;
+    color: #080808;
+}
+#thirdslider{
+    width: 100%;
+    border: .1rem solid #080808;
+ 
+}
+#imgtrust{
+    margin: 0rem;
+    padding: 0rem;
+}
+#fourthslider{
+    background-image: url('../img/entrepreneur.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80rem;
+
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 10vh;
+    background-color: #040404;
+    color: wheat;
+}
